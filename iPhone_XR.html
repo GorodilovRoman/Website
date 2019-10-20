@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Etui iPhone</title>
+		<style>
+		table, th, td {
+			border: thick solid #FFFFFF;
+			z-index: -1;
+		}
+		.etui {
+			left: 20%;
+			width: 70%;
+			top: 10%;
+			position: absolute;
+		}
+		.picture {
+			text-align: center;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+		.navbar a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 10px 16px;
+			text-decoration: none;
+			font-size: 100%;
+		}
+		.navbar a:hover {
+			background: #ddd;
+			color: black;
+		}
+		.nazwa {
+			left: 21%;
+			width: 70%;
+			top: 5%;
+			position: absolute;
+			z-index: -1;
+		}
+		.menu {
+			top: 5%;
+			left: 2%;
+			position: absolute;
+			z-index: -1;
+		}
+		#left { text-align: left; }
+		#right { text-align: right; }
+		#center { text-align: center; }
+		input[type="search"] {
+			top: 23%;
+			left: 20%;
+			min-height: 20px;
+			position: absolute;
+			border: 1px solid #000;
+			outline: none;
+			-webkit-appearance: none;
+			width: 60%;
+			vertical-align: middle;
+		}
+		input[type="submit"] {
+			top: 23%;
+			left: 81%;
+			width: 7%;
+			height: 20px;
+			position: absolute;
+			vertical-align: middle;
+		}
+		</style>
+		<script>
+			function picclicked(element) {
+				alert("Clicked");
+			}
+			function picchosen(element) {
+				document.getElementById(element).style.border = "thin groove #AA00FF";
+			}
+			function picunchosen(element) {
+				document.getElementById(element).style.border = "thick solid #FFFFFF";
+			}
+		</script>
+	</head>
+	<body>
+	
+		<div class="navbar">
+			<a href="Projekt.html">Home</a>
+			<a href="#news">News</a>
+			<a href="#contact">Help</a>
+			<input type="search" name="q" placeholder="Search on this site">
+			<input type="submit" value="Search">
+		</div>
+		
+		<div class="nazwa">
+			<p><strong>iPhone XR etui:</p>
+		</div>
+	
+		<table class="etui" style="width:70%">
+			<tr>
+				<td><p>There might be your etui</p></div></td>
+			</tr>
+		</table>
+		
+		<div class="menu">
+			<p><strong>Select your model:</strong></p>
+			<menu>
+				<li><a href="iPhone_6s.html">iPhone 6S</a></li>
+				<li><a href="iPhone_6s_Plus.html">iPhone 6S Plus</a></li>
+				<li><a href="iPhone_7s.html">iPhone 7S/8S</a></li>
+				<li><a href="iPhone_7s_Plus.html">iPhone 7S Plus/8S Plus</a></li>
+				<li><a href="iPhone_XR.html">iPhone XR</a></li>
+				<li><a href="iPhone_X.html">iPhone X/XS</a></li>
+				<li><a href="iPhone_XS_Max.html">iPhone XS Max</a></li>
+			</menu>
+		</div>
+		
+	</body>
+</html>
