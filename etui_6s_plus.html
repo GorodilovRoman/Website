@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Etui iPhone</title>
+		<style>
+		table, th, td {
+			border: thick solid #FFFFFF;
+			z-index: -1;
+		}
+		.etui {
+			left: 5%;
+			width: 90%;
+			top: 15%;
+			position: absolute;
+		}
+		.picture {
+			text-align: center;
+			width: 40%;
+		}
+		.colors {
+			text-align: center;
+			width: 20%;
+		}
+		.text {
+			text-align: left;
+			width: 40%;
+		}
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+		.navbar a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 10px 16px;
+			text-decoration: none;
+			font-size: 100%;
+		}
+		.navbar a:hover {
+			background: #ddd;
+			color: black;
+		}
+		.nazwa {
+			left: 5%;
+			width: 70%;
+			top: 7%;
+			position: absolute;
+			z-index: -1;
+		}
+		.menu {
+			top: 5%;
+			left: 2%;
+			position: absolute;
+			z-index: -1;
+		}
+		#left { text-align: left; }
+		#right { text-align: right; }
+		#center { text-align: center; }
+		input[type="search"] {
+			top: 23%;
+			left: 20%;
+			min-height: 20px;
+			position: absolute;
+			border: 1px solid #000;
+			outline: none;
+			-webkit-appearance: none;
+			width: 60%;
+			vertical-align: middle;
+		}
+		input[type="submit"] {
+			top: 23%;
+			left: 81%;
+			width: 7%;
+			height: 20px;
+			position: absolute;
+			vertical-align: middle;
+		}
+		</style>
+		<script>
+			function colclicked(element) {
+				alert("Clicked");
+			}
+			function colchosen(element) {
+				document.getElementById(element).style.border = "thin groove #AA00FF";
+			}
+			function colunchosen(element) {
+				document.getElementById(element).style.border = "thick solid #FFFFFF";
+			}
+		</script>
+	</head>
+	<body>
+	
+		<div class="navbar">
+			<a href="Projekt.html">Home</a>
+			<a href="#news">News</a>
+			<a href="Help.html">Help</a>
+			<input type="search" name="q" placeholder="Search on this site">
+			<input type="submit" value="Search">
+		</div>
+		
+		<div class="nazwa">
+			<p><strong>Choose a color of etui for iPhone 6 Plus/6s Plus:</p>
+		</div>
+		
+		<table class="etui">
+			<td class="picture">Picture of etui</td>
+			<td class="colors">There you can choose color of your etui<div id="colorbox" tabindex="-1" outline="none" style="display: none;"></div></td>
+			<td class="text">There you might read some information about this product</td>
+		</table>
+		
+	</body>
+</html>
